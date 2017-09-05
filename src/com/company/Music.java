@@ -3,6 +3,7 @@ package com.company;
 
 public class Music
 {
+   //Fields
     private String id;
     private String title;
     private String medium;
