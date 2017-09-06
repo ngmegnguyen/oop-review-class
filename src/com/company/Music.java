@@ -41,6 +41,9 @@ public class Music
     /** Returns the medium of the media
      * @return the medium of the media
      */
+    public String getMedium(){
+        return medium;
+    }
 
 
     /** Returns the id of the media
