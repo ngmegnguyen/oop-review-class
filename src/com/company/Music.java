@@ -1,6 +1,5 @@
 package com.company;
 
-
 public class Music
 {
    //Fields
@@ -35,51 +34,73 @@ public class Music
      */
     public String getTitle()
     {
-
+        return title;
     }
 
     /** Returns the medium of the media
      * @return the medium of the media
      */
 
+    public String getMedium()
+    {
+        return medium;
+    }
 
     /** Returns the id of the media
      * @return the id of the media
      */
-
+    public String getId()
+    {
+        return id;
+    }
 
     /** Change the id for this media
      * @param id new id
      */
     public void setId(String id)
     {
-
+        this.id = id;
     }
 
     /** Change   comment about the media
      * @param comment new comment
      */
-
+    public void setComment(String comment)
+    {
+        this.comment = comment;
+    }
 
     /** Append a new comment about the media
      * @param comment new comment
      */
-
+    public void addComment(String comment)
+    {
+        this.comment = this.comment + "\n" + comment;
+    }
 
     /** Returns the artist
      * @return the artist
      */
-
+    public String getArtist()
+    {
+        return artist;
+    }
 
     /** Returns the length of the music in minutes
      * @return the length of the music
      */
-
+    public double getLength()
+    {
+        return length;
+    }
 
     /** Returns the number of tracks
      * @return the number of tracks
      */
-
+    public int getTracks()
+    {
+        return tracks;
+    }
 
 
     /** Return a String representation of the music.
@@ -87,6 +108,8 @@ public class Music
      */
     public String toString()
     {
-
+        return id + " Title: " + title + " Medium: " + medium
+                + " Artist: " + artist + " Track: " + tracks
+                + " Length: " + length + "\nComment: " + comment;
     }
 }
