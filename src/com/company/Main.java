@@ -13,5 +13,7 @@ public class Main {
 
         // Print the library
 
+        library.printLibrary();
+
     }
 }

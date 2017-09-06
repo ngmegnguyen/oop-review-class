@@ -41,7 +41,8 @@ public class Music
     /** Returns the medium of the media
      * @return the medium of the media
      */
-    public String getMedium(){
+    public String getMedia()
+    {
         return medium;
     }
 
@@ -49,6 +50,10 @@ public class Music
     /** Returns the id of the media
      * @return the id of the media
      */
+    public String getId()
+    {
+        return id;
+    }
 
 
     /** Change the id for this media
@@ -56,32 +61,55 @@ public class Music
      */
     public void setId(String id)
     {
-
+        this.id = id;
     }
 
     /** Change   comment about the media
      * @param comment new comment
      */
+    public void setComm(String comment)
+    {
+        this.comment = comment;
+    }
 
 
-    /** Append a new comment about the media
+    /**
+     * Append a new comment about the media
+     *
      * @param comment new comment
      */
+    public void addComm(String comment)
+    {
+          this.comment += comment;
+    }
 
 
     /** Returns the artist
      * @return the artist
      */
+    public String getArtist()
+    {
+        return artist;
+    }
 
 
     /** Returns the length of the music in minutes
      * @return the length of the music
      */
+    public double getLength()
+    {
+        return length;
+    }
 
 
-    /** Returns the number of tracks
+    /**
+     * Returns the number of tracks
+     *
      * @return the number of tracks
      */
+    public int getTracks() {
+        return tracks;
+    }
 
 
 
@@ -90,6 +118,13 @@ public class Music
      */
     public String toString()
     {
+       String message = "Title: " + title + "\nArtist: " + artist + "\nMedium: " + this.getMedia() +
+               "\n# of Tracks: " + tracks + "\nLength: " + length;
 
+        if (this.comment != "") {
+            message += "\nComment: " + this.comment;
+        }
+
+        return message;
     }
 }
