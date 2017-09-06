@@ -35,7 +35,7 @@ public class Music
      */
     public String getTitle()
     {
-
+        return title;
     }
 
     /** Returns the medium of the media
