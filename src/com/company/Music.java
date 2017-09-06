@@ -35,12 +35,15 @@ public class Music
      */
     public String getTitle()
     {
-
+        return title;
     }
 
     /** Returns the medium of the media
      * @return the medium of the media
      */
+    public String getMedium(){
+        return medium;
+    }
 
 
     /** Returns the id of the media
